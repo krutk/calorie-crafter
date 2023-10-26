@@ -54,7 +54,7 @@ export default function Home() {
           <Image alt="Calorie Crafter" src={diet} height={400} />
         </div>
       </div>
-      <div className="flex h-screen flex-col items-center bg-[#F2CC8F] justify-center">
+      <div className="flex h-screen flex-col items-center bg-[#F2CC8F] justify-center px-12 md:px-24">
         <div className="text-[32px] lg:text-[48px] font-lilita-one ">
           Our Team
         </div>
