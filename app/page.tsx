@@ -13,7 +13,7 @@ export default function Home() {
         <div className="font-lilita-one text-[32px] text-white md:text-[64px] lg:text-[80px] max-w-[800px] p-8 text-center">
           Effortless Calorie Tracking with a Swipe
         </div>
-        <div className="flex flex-col md:flex-row gap-5">
+        <div className="flex flex-col md:flex-row gap-5 items-center">
           {/* <Button variant="outline"> */}
           <Link href="/counter">
             <Button variant="outline">Counter</Button>
