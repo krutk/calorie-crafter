@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
 import calculate from "../public/calculate.svg";
 import diet from "../public/diet.svg";
 import logo from "../public/logo.svg";
@@ -13,10 +14,16 @@ export default function Home() {
           Effortless Calorie Tracking with a Swipe
         </div>
         <div className="flex flex-col md:flex-row gap-5">
-          <Button variant="outline">Counter</Button>
-          <Button variant="secondary" className="bg-[#81B29A]">
-            Recommender
-          </Button>
+          {/* <Button variant="outline"> */}
+          <Link href="/counter">
+            <Button variant="outline">Counter</Button>
+          </Link>
+          {/* </Button> */}
+          <Link href="/recommender">
+            <Button variant="secondary" className="bg-[#81B29A]">
+              Recommender
+            </Button>
+          </Link>
         </div>
       </div>
       <div className="flex h-screen flex-col items-center bg-black justify-center">
