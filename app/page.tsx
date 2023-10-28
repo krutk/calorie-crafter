@@ -1,9 +1,12 @@
 import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
 import Image from "next/image";
 import Link from "next/link";
 import calculate from "../public/calculate.svg";
 import diet from "../public/diet.svg";
 import logo from "../public/logo.svg";
+import person from "../public/undefined.jpeg";
+import person1 from "../public/undefined1.jpeg";
 
 export default function Home() {
   return (
@@ -16,12 +19,12 @@ export default function Home() {
         <div className="flex flex-col md:flex-row gap-5 items-center">
           {/* <Button variant="outline"> */}
           <Link href="/counter">
-            <Button variant="outline">Counter</Button>
+            <Button variant="outline">Hub</Button>
           </Link>
           {/* </Button> */}
           <Link href="/recommender">
             <Button variant="secondary" className="bg-[#81B29A]">
-              Recommender
+              Suggester
             </Button>
           </Link>
         </div>
@@ -62,6 +65,34 @@ export default function Home() {
           Meet the talented group behind Track and Eat—a dedicated bunch of food
           lovers, nutritionists, and tech enthusiasts committed to making
           healthy eating easier for everyone.
+        </div>
+        {/* box-sizing: border-box;
+height: 300px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 40px 40px 40px 40px;
+background-color: #efc278;
+overflow: visible;
+align-content: center;
+flex-wrap: nowrap;
+gap: 20;
+position: absolute;
+border-radius: 30px; */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-4">
+          <Card className="h-[300px] w-auto p-10 bg-[#EFC278] border items-center justify-center">
+            <Image
+              alt="undefined person"
+              className="rounded-full"
+              src={person}
+              height={80}
+              width={80}
+            />
+          </Card>
+          <Card className="h-[300px] p-10 bg-[#EFC278] gap-5"></Card>
+          <Card className="h-[300px] p-10 bg-[#EFC278] gap-5"></Card>
+          <Card className="h-[300px] p-10 bg-[#EFC278] gap-5"></Card>
         </div>
       </div>
     </main>

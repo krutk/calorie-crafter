@@ -1,0 +1,228 @@
+:host {
+  --heartIcon: "";
+  --heartActiveIcon: "";
+  --heartBackgroundImageUrl: "";
+  --circleBackgroundImageUrl: "";
+  --heartBackgroundColor: #ffffff;
+  --circleBackgroundColor: #ffffff;
+}
+
+.heartBackgroundImage {
+  background-image: var(--heartBackgroundImageUrl);
+  background-size: cover;
+}
+
+.circleBackgroundImage {
+  background-image: var(--circleBackgroundImageUrl);
+  background-size: cover;
+}
+
+.heartStep {
+  background: var(--heartIcon) no-repeat;
+  height: 1.313rem;
+  width: 1.313rem;
+  cursor: pointer;
+}
+
+.heartStep.isHeartActive {
+  background: var(--heartActiveIcon) no-repeat;
+  height: 1.313rem;
+  width: 1.313rem;
+}
+
+.popupbackground {
+  transition-property: transform;
+  transition-duration: 2s;
+  width: 100%;
+  transform: translateX(0%);
+}
+
+.boxSize {
+  display: inline-block;
+}
+
+.tiledPopup {
+  height: 15.5rem;
+  width: -webkit-fill-available;
+  object-fit: cover;
+}
+
+.anchor-heading {
+  display: inline;
+  font-size: 1rem;
+  padding: 0.5rem 2rem;
+  margin: 0.5rem;
+}
+
+.headingText {
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 1.875rem 1.875rem 1.875rem;
+  padding: 5px 15px;
+}
+
+.slider-wrapper {
+  display: flex;
+}
+
+.container {
+  overflow: hidden;
+}
+
+.slds-carousel__indicators {
+  background: #e5e5e4;
+  border-radius: 2.188rem;
+  width: fit-content;
+  padding: 0.313rem 0.625rem;
+}
+
+.headingAlign {
+  text-align: center;
+}
+
+.contentAlign {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ctaTextStyle {
+  display: flex;
+}
+
+.heartLeftDesktopCss {
+  background-color: var(--heartBackgroundColor);
+  width: 34vh;
+  height: 49vh;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  transform: rotate(-50deg);
+  left: 56vh;
+  border-bottom-left-radius: 1%;
+  position: absolute;
+  top: 0vh;
+}
+
+.heartLeftMobileCss {
+  background-color: var(--heartBackgroundColor);
+  width: 28vh;
+  height: 40vh;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  transform: rotate(-50deg);
+  left: 4.5vh;
+  border-bottom-left-radius: 1%;
+  position: absolute;
+  top: 21vh;
+}
+
+.heartRightDesktopCss {
+  background-color: var(--heartBackgroundColor);
+  width: 34vh;
+  height: 49vh;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  transform: rotate(50deg);
+  left: 71.5vh;
+  border-bottom-left-radius: 1%;
+  position: absolute;
+  top: 0vh;
+}
+
+.heartRightMobileCss {
+  background-color: var(--heartBackgroundColor);
+  width: 28vh;
+  height: 40vh;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  transform: rotate(50deg);
+  left: 17vh;
+  border-bottom-left-radius: 1%;
+  position: absolute;
+  top: 21vh;
+}
+
+.heartContentDesktopCss {
+  position: absolute;
+  top: 12vh;
+  left: 68vh;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heartContentMobileCss {
+  position: absolute;
+  top: 30vh;
+  left: 13vh;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.circleShapeDesktopCss {
+  background-color: var(--circleBackgroundColor);
+  position: absolute;
+  padding: 3rem 7rem;
+  border-radius: 50%;
+  width: 54vh;
+  height: 54vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.circleShapeMobileCss {
+  background-color: var(--circleBackgroundColor);
+  position: absolute;
+  padding: 3rem 7rem;
+  border-radius: 50%;
+  width: 40vh;
+  height: 40vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.circleContentCss {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imageCss {
+  width: -webkit-fill-available;
+}
+
+@media (min-width: 30.063rem) and (max-width: 51.25rem) {
+  .mobileContentCss {
+    height: 32rem;
+  }
+}
+
+@media (max-width: 30.063rem) {
+  .mobileContentCss {
+    height: 22rem;
+  }
+}
+
+@media (max-width: 51.25rem) and (orientation: landscape) {
+  .cta-section {
+    display: flex;
+    flex-direction: column;
+  }
+  .text {
+    padding: 1rem;
+  }
+  .hero-img {
+    height: 35vh;
+  }
+}

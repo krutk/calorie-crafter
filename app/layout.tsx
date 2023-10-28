@@ -1,5 +1,11 @@
 import type { Metadata } from "next";
-import { Inter, Jua, Lilita_One, Playfair_Display } from "next/font/google";
+import {
+  Inter,
+  Jua,
+  Lilita_One,
+  Playfair_Display,
+  Space_Mono,
+} from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({
@@ -21,6 +27,11 @@ const playfairDisplay = Playfair_Display({
   weight: "400",
   variable: "--font-playfair-display",
 });
+const spaceMono = Space_Mono({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-space-mono",
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -35,7 +46,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} ${jua.variable} ${lilitaOne.variable} ${playfairDisplay.variable}`}
+        className={`${inter.variable} ${jua.variable} ${lilitaOne.variable} ${playfairDisplay.variable} ${spaceMono.variable}`}
       >
         {children}
       </body>

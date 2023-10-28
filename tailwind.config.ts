@@ -75,6 +75,7 @@ module.exports = {
         jua: "var(--font-unbounded)",
         "lilita-one": "var(--font-lilita-one)",
         "playfair-display": "var(--font-playfair-display)",
+        "space-mono": "var(--font-space-mono)",
       },
     },
   },
